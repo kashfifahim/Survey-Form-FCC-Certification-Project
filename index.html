@@ -7,6 +7,27 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <h1 id="title">This is the Title of The Survey</h1>
+    <p id="description">This is the p element.</p>
+    <form action="" id="survey-form">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name" id="name" required
+        placeholder="Patrick Mahomes">
+        <label for="email">Enter your email</label>
+        <input type="email" name="email" id="email" pattern=".+@example\.com" 
+        required placeholder="mahomes@kcchiefs.com">
+        <label for="number">Enter your age</label>
+        <input type="number" name="number" id="number" placeholder="28">
+        <label for="dropdown">Choose Game</label>
+        <select name="choose-game" id="dropdown">
+            <option value="">--Select Game Party--</option>
+            <option value="wildcard-game">Wild Card Round</option>
+            <option value="divisional-game">Divisional Round</option>
+            <option value="championship">Conference Championship Game</option>
+            <option value="super-bowl">The Super Bowl</option>
+        </select>
+        <label for="textarea"></label>
+        <textarea name="comments" id="textarea" cols="30" rows="10"></textarea>
+    </form>
 </body>
 </html>
