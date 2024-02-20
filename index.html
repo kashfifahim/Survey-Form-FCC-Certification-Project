@@ -7,27 +7,140 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">This is the Title of The Survey</h1>
-    <p id="description">This is the p element.</p>
-    <form action="" id="survey-form">
-        <label for="name">Enter your name</label>
-        <input type="text" name="name" id="name" required
-        placeholder="Patrick Mahomes">
-        <label for="email">Enter your email</label>
-        <input type="email" name="email" id="email" pattern=".+@example\.com" 
-        required placeholder="mahomes@kcchiefs.com">
-        <label for="number">Enter your age</label>
-        <input type="number" name="number" id="number" placeholder="28">
-        <label for="dropdown">Choose Game</label>
-        <select name="choose-game" id="dropdown">
-            <option value="">--Select Game Party--</option>
-            <option value="wildcard-game">Wild Card Round</option>
-            <option value="divisional-game">Divisional Round</option>
-            <option value="championship">Conference Championship Game</option>
-            <option value="super-bowl">The Super Bowl</option>
-        </select>
-        <label for="textarea"></label>
-        <textarea name="comments" id="textarea" cols="30" rows="10"></textarea>
-    </form>
+    <div class="title">
+        <h1 id="title">NFL Playoff Watch Party Exit Survey</h1>
+    </div>
+
+    <div class="description">
+        <p id="description">Collecting feedback on your experience with our first annual NFL Playoff Watch Party series!</p>
+    </div>
+    
+    <div class="form">
+        <form action="" id="survey-form">
+            <fieldset>
+                <legend>This survey is being completed by . . . </legend>
+                <div class="name">
+                    <label for="name" id="name-label">Enter your name</label>
+                <input type="text" name="name" id="name" required
+                placeholder="Patrick Mahomes">
+                </div>
+        
+                <div class="email">
+                    <label for="email" id="email-label">Enter your email</label>
+                <input type="email" name="email" id="email" pattern=".+@example\.com" 
+                required placeholder="mahomes@kcchiefs.com">
+                </div>
+                
+                <div class="age">
+                    <label for="number" id="number-label">Enter your age</label>
+                <input type="number" name="number" id="number" min="18" max="99" placeholder="28">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Which game day watch party do you want to review?</legend>
+                <div class="dropdown">
+                    <label for="dropdown">Choose Game</label>
+                <select name="choose-game" id="dropdown">
+                    <option value="">--Select Game Party--</option>
+                    <option value="wildcard-game">Wild Card Round</option>
+                    <option value="divisional-game">Divisional Round</option>
+                    <option value="championship">Conference Championship Game</option>
+                    <option value="super-bowl">The Super Bowl</option>
+                </select>
+                </div>
+            </fieldset>
+            
+
+            <div class="radio-buttons">
+                <fieldset>
+                    <legend>How would you rate the quality of the food and beverages?</legend>
+                
+                <div class="radio-food">
+                    <input type="radio" id="1" name="radio-food" value="1" />
+                    <label for="1">1</label>
+                    <input type="radio" id="1" name="radio-food" value="2" />
+                    <label for="1">2</label>
+                    <input type="radio" id="1" name="radio-food" value="3" checked/>
+                    <label for="1">3</label>
+                    <input type="radio" id="1" name="radio-food" value="4" />
+                    <label for="1">4</label>
+                    <input type="radio" id="1" name="radio-food" value="5" />
+                    <label for="1">5</label>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How would you rate the overall organization of the watch party?</legend>
+                <div class="radio-org">
+                    <input type="radio" id="1" name="radio-org" value="1" />
+                    <label for="1">1</label>
+                    <input type="radio" id="1" name="radio-org" value="2" />
+                    <label for="1">2</label>
+                    <input type="radio" id="1" name="radio-org" value="3" checked/>
+                    <label for="1">3</label>
+                    <input type="radio" id="1" name="radio-org" value="4" />
+                    <label for="1">4</label>
+                    <input type="radio" id="1" name="radio-org" value="5" />
+                    <label for="1">5</label>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How likely are you to attend another watch party based on this experience?</legend>
+                <div class="radio-watch-again">
+                    <input type="radio" id="1" name="radio-watch-again" value="1" />
+                    <label for="1">1</label>
+                    <input type="radio" id="1" name="radio-watch-again" value="2" />
+                    <label for="1">2</label>
+                    <input type="radio" id="1" name="radio-watch-again" value="3" checked/>
+                    <label for="1">3</label>
+                    <input type="radio" id="1" name="radio-watch-again" value="4" />
+                    <label for="1">4</label>
+                    <input type="radio" id="1" name="radio-watch-again" value="5"/>
+                    <label for="1">5</label>
+                  </div>
+                </fieldset>
+
+            </div>
+
+            <div class="checkbox">
+                <fieldset>
+                    <legend>
+                        How did you get to the watch party?
+                    </legend>
+                    <div>
+                        <input type="checkbox" id="transport" name="taseen-car" value="taseen-car" />
+                        <label for="transport">Taseen's Car</label>
+                        <input type="checkbox" id="transport" name="fahim-car" value="fahim-car" />
+                        <label for="transport">Fahim's Car</label>
+                        <input type="checkbox" id="transport" name="kazi-car" value="kazi-car" />
+                        <label for="transport">Kazi's Car</label>
+                        <input type="checkbox" id="transport" name="my-car" value="my-car" />
+                        <label for="transport">My Car</label>
+                        <input type="checkbox" id="transport" name="lirr-train" value="lirr-train" />
+                        <label for="transport">LIRR Train</label>
+                        <input type="checkbox" id="transport" name="uber-car" value="uber-car" />
+                        <label for="transport">Took an Uber</label>
+                    </div>
+                </fieldset>
+            </div>
+    
+            <div class="textarea">
+                <fieldset>
+                    Any other comments or suggestions to improve the playoff watch parties for next season?
+                    <div>
+                        <textarea name="comments" id="textarea" cols="50" rows="10"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="button-element">
+                <input type="submit" name="submit" id="submit">
+            </div>
+                    
+        </form>
+    </div>
+    
 </body>
 </html>
