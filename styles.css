@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(
+        90deg,
+        yellow,
+        orange
+    );
+}
